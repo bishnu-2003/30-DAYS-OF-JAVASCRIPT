@@ -1,0 +1,7 @@
+Problem link : https://leetcode.com/problems/create-hello-world-function
+soltution : const CreateHelloWorld() = function(){
+            return (...args){
+           return "Hello World";
+          }
+       };
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
