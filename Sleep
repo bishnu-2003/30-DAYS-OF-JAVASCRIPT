@@ -1,0 +1,7 @@
+priblem link : https://leetcode.com/problems/sleep
+solution:
+
+async function sleep(millis) {
+    await new Promise(resolve => setTimeout(resolve, millis));
+}
+
