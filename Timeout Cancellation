@@ -1,0 +1,13 @@
+problem link: https://leetcode.com/problems/timeout-cancellation
+solution: 
+const cancellable = function(fn, args, t) {
+   
+    const cancelFn = function (){
+      clearTimeout(timer);
+  };
+  const timer = setTimeout(()=>{
+      fn(...args)
+  }, t);
+  return cancelFn ;
+};
+
