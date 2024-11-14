@@ -1,0 +1,11 @@
+problem link: https://leetcode.com/problems/debounce
+solution : 
+type F = (...p: any[]) => any
+
+function debounce(fn: F, t: number): F {
+    let timer : ReturnType<typeof setTimeout>;
+    return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn(...args), t);
+    }
+};
