@@ -1,0 +1,27 @@
+Problem link: https://leetcode.com/problems/flatten-deeply-nested-array
+Solution: /**
+ * @param {Array} arr
+ * @param {number} depth
+ * @return {Array}
+ */
+var flat = function (arr, n) {
+    const result = [];
+    
+    // Helper function to handle flattening recursively
+    function flatten(item, depth) {
+        if (Array.isArray(item) && depth < n) {
+            for (let i = 0; i < item.length; i++) {
+                flatten(item[i], depth + 1);
+            }
+        } else {
+            result.push(item);
+        }
+    }
+    
+    // Start flattening from the input array with initial depth 0
+    for (let i = 0; i < arr.length; i++) {
+        flatten(arr[i], 0);
+    }
+    
+    return result;
+}
