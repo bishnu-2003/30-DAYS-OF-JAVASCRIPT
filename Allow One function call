@@ -1,4 +1,4 @@
-problem link: https://leetcode.com/problems/allow-one-function-call
+problem Link: https://leetcode.com/problems/allow-one-function-call
 solution: /**
  * @param {Function} fn
  * @return {Function}
