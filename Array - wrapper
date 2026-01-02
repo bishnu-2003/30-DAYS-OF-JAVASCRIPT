@@ -1,3 +1,4 @@
+// this was asked in interview
 Problem link: https://leetcode.com/problems/array-wrapper
 Solution: /**
  * @param {number[]} nums
