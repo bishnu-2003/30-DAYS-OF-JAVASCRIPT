@@ -1,4 +1,5 @@
 problem link: https://leetcode.com/problems/add-two-promises
+
 solution:
 var addTwoPromises = async function(promise1, promise2) {
   let [x1 , x2] = await Promise.all([promise1, promise2]);
