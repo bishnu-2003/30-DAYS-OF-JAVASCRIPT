@@ -1,4 +1,4 @@
-Problem link : https://leetcode.com/problems/array-prototype-last
+ Problem link : https://leetcode.com/problems/array-prototype-last
 solution : /**
  * @return {null|boolean|number|string|Array|Object}
  */
